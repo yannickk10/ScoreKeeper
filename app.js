@@ -31,12 +31,13 @@ p2Btn.addEventListener('click', () => {
             isGameOver = true;
         }
     }
-    // edit the score display
+    // update the score display
     p2Display.textContent = `${p2Score}`; 
 })
 
 // checking if there's a change of event (the user selects a different number)
 winningScore.addEventListener('change', () => {
+    // getting the value the user selected
     upToScore = parseInt(winningScore.value);
 })
 
@@ -45,6 +46,7 @@ resetBtn.addEventListener('click', () => {
     p1Score = 0;
     p2Score = 0;
 
+    // updating the score display
     p1Display.textContent = `${p1Score}`;
     p2Display.textContent = `${p2Score}`;
 
