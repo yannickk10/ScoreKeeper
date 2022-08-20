@@ -36,9 +36,9 @@ p2Btn.addEventListener('click', () => {
 })
 
 // checking if there's a change of event (the user selects a different number)
-winningScore.addEventListener('change', () => {
+winningScore.addEventListener('change', function () {
     // getting the value the user selected
-    upToScore = parseInt(winningScore.value);
+    upToScore = parseInt(this.value);
 })
 
 // resetting the values and game
