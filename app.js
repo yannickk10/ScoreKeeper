@@ -16,6 +16,7 @@ const winningScore = document.querySelector('#playto');
 let upToScore = 0;
 let isGameOver = false;
 
+//passing in two objects
 function updateScores(player, opponent) {
     // if the isGameOver is not true increase the score by 1
     if (!isGameOver) {
